@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from 'next/link'
 import CustomAccordion from "../components/CustomAccordion";
+import Knot from '../components/TorusKnot';
 
 
 export default function Home() {
@@ -23,28 +24,57 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start font-[family-name:var(--font-geist-mono)]">
-        <div>
+        {/* <div>
           Hi, Welcome to my portfolio
-        </div>
+        </div> */}
+
         <div className="flex justify-evenly w-full">
-          <button onClick={() => handleChange('panel1')}>Research Projects</button>
-          <button onClick={() => handleChange('panel2')}>Software Dev Projects</button>
-          <button onClick={() => handleChange('panel3')}>GIS Projects</button>
+
+        
+          <button
+            onClick={() => handleChange('panel1')}
+            className="flex flex-col items-center"
+          >
+            <div className="">
+              < Knot />
+            </div>
+            <span className="">Research Projects</span>
+          </button>
+
+          <button
+            onClick={() => handleChange('panel2')}
+            className="flex flex-col items-center"
+          >
+            <div className="">
+              < Knot />
+            </div>
+            <span className="">Software Dev Projects</span>
+          </button>
+
+          <button
+            onClick={() => handleChange('panel3')}
+            className="flex flex-col items-center"
+          >
+            <div className="">
+              < Knot />
+            </div>
+            <span className="">GIS Projects</span>
+          </button>
+          
         </div>
-        {/* Accordions */}
         <div className="flex flex-col w-full gap-0">
-        <CustomAccordion
-          expanded={expanded === 'panel1'}
-          onChange={() => handleChange('panel1')}
-        />
-        <CustomAccordion
-          expanded={expanded === 'panel2'}
-          onChange={() => handleChange('panel2')}
-        />
-        <CustomAccordion
-          expanded={expanded === 'panel3'}
-          onChange={() => handleChange('panel3')}
-        />
+          <CustomAccordion
+            expanded={expanded === 'panel1'}
+            onChange={() => handleChange('panel1')}
+          />
+          <CustomAccordion
+            expanded={expanded === 'panel2'}
+            onChange={() => handleChange('panel2')}
+          />
+          <CustomAccordion
+            expanded={expanded === 'panel3'}
+            onChange={() => handleChange('panel3')}
+          />
         </div>
   
         {/* <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">

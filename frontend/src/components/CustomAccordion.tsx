@@ -16,8 +16,8 @@ const Accordion = styled((props: AccordionProps) => (
   '&::before': {
     display: 'none',
   },
-  // backgroundColor: '#0a0a0a', 
-  backgroundColor: 'blue', 
+  backgroundColor: '#0a0a0a', 
+  // backgroundColor: 'blue', 
   display: 'flex',
   flexDirection: 'column',
   transition: 'flex 0.5s ease',
@@ -25,18 +25,17 @@ const Accordion = styled((props: AccordionProps) => (
 
 const AccordionSummary = styled((props: AccordionSummaryProps) => (
   <MuiAccordionSummary
-    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '1px' }} />}
     {...props}
   />
 ))(({ theme }) => ({
-  backgroundColor: 'rgba(255, 255, 255, 0)',
+  backgroundColor: 'rgba(255, 255, 255, 0)', // Fully transparent background
   flexDirection: 'row-reverse',
-  minHeight: '0px',
-  [`& .MuiAccordionSummary-expandIconWrapper.Mui-expanded`]: {
-    transform: 'rotate(90deg)',
-  },
+  minHeight: '0px', // Almost invisible
+  padding: '0px', // No padding
   [`& .MuiAccordionSummary-content`]: {
-    marginLeft: theme.spacing(0),
+    margin: 0, // Remove extra margin
+    display: 'none', // Hide the content if it's not necessary
   },
 }));
 
@@ -66,7 +65,7 @@ export default function CustomizedAccordion({
         flexGrow: expanded ? 3 : 1, // Increase this value to grow the expanded accordion
         flexShrink: expanded ? 0 : 1, // Ensure expanded accordion doesn't shrink
         flexBasis: expanded ? '100%' : '0%', // Control the initial size more explicitly
-        transition: 'flex-grow 0s ease, flex-basis 0s ease', // Smooth resizing
+        // transition: 'flex-grow 0s ease, flex-basis 0s ease', // Smooth resizing
         overflow: 'hidden', // Avoid content overflow
       }}
     >

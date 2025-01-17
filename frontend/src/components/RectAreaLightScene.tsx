@@ -117,7 +117,7 @@ const RectAreaLightScene: React.FC = () => {
       scene.add(torus2);
 
       // Cube
-      const geoCube = new THREE.BoxGeometry(1.5, 1.5, 1.5); // Dimensions of the cube
+      const geoCube = new THREE.OctahedronGeometry(1, 0); // Dimensions of the cube
       const matCube = new THREE.MeshStandardMaterial({
         color: 0xff0000, // Red color for contrast
         roughness: 1,  // Material roughness for lighting
@@ -283,9 +283,11 @@ const RectAreaLightScene: React.FC = () => {
       }
       if (torus1) {
         torus1.rotation.y += 0.01; // Rotate the first torus around Y-axis
+        torus1.rotation.x += 0.01;
       }
       if (torus2) {
-        torus2.rotation.y += 0.02; // Rotate the second torus around Z-axis
+        torus2.rotation.y += 0.01; // Rotate the second torus around Z-axis
+        torus1.rotation.x += 0.01;
       }
       if (cube) {
         cube.rotation.y += 0.01; // Rotate the cube around its Y-axis

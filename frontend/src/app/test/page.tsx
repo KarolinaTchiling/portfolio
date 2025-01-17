@@ -1,6 +1,7 @@
 
 import ThreeCanvas from '../../components/ThreeCanvas';
 import RectAreaLightScene from '../../components/RectAreaLightScene';
+import Knot from '../../components/TorusKnot';
 import Font from '../../components/Font';
 
 const Page: React.FC = () => {
@@ -8,8 +9,9 @@ const Page: React.FC = () => {
         <>
         <div className="">
             {/* <ThreeCanvas /> */}
-            <RectAreaLightScene />
+            {/* <RectAreaLightScene /> */}
             {/* < Font /> */}
+            < Knot />
       </div>
       </>
     );
