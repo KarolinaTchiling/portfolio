@@ -1,14 +1,53 @@
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from 'next/link'
+import CustomAccordion from "../components/CustomAccordion";
+
 
 export default function Home() {
+  const [expanded, setExpanded] = useState<string | null>(null);
+
+  const handleChange = (panel: string) => {
+    if (expanded === panel) {
+      // If the current panel is already open, just close it
+      setExpanded(null);
+    } else {
+      // Close any open accordion first, then open the new one
+      setExpanded(null); // Close all accordions
+      setTimeout(() => setExpanded(panel), 300); // Delay opening the new one for smooth animation
+    }
+  };
+  
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start font-[family-name:var(--font-geist-mono)]">
         <div>
           Hi, Welcome to my portfolio
         </div>
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <div className="flex justify-evenly w-full">
+          <button onClick={() => handleChange('panel1')}>Research Projects</button>
+          <button onClick={() => handleChange('panel2')}>Software Dev Projects</button>
+          <button onClick={() => handleChange('panel3')}>GIS Projects</button>
+        </div>
+        {/* Accordions */}
+        <div className="flex flex-col w-full gap-0">
+        <CustomAccordion
+          expanded={expanded === 'panel1'}
+          onChange={() => handleChange('panel1')}
+        />
+        <CustomAccordion
+          expanded={expanded === 'panel2'}
+          onChange={() => handleChange('panel2')}
+        />
+        <CustomAccordion
+          expanded={expanded === 'panel3'}
+          onChange={() => handleChange('panel3')}
+        />
+        </div>
+  
+        {/* <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             <Link href="/software_dev">Software Dev</Link>
           </li> 
@@ -18,7 +57,7 @@ export default function Home() {
           <li className="mb-2">
             <Link href="/gis">GIS</Link>
           </li>
-        </ol>
+        </ol> */}
 
 
       </main>
