@@ -5,7 +5,8 @@ import Image from "next/image";
 import Link from 'next/link'
 import CustomAccordion from "../components/CustomAccordion";
 import Knot from '../components/TorusKnot';
-
+import Rings from '../components/Rings';
+import Globe from '../components/Globe';
 
 export default function Home() {
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -36,7 +37,7 @@ export default function Home() {
             className="flex flex-col items-center"
           >
             <div className="">
-              < Knot />
+              < Rings />
             </div>
             <span className="">Research Projects</span>
           </button>
@@ -56,7 +57,7 @@ export default function Home() {
             className="flex flex-col items-center"
           >
             <div className="">
-              < Knot />
+              < Globe />
             </div>
             <span className="">GIS Projects</span>
           </button>

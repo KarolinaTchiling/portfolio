@@ -9,9 +9,9 @@ const Page: React.FC = () => {
         <>
         <div className="">
             {/* <ThreeCanvas /> */}
-            {/* <RectAreaLightScene /> */}
+            <RectAreaLightScene />
             {/* < Font /> */}
-            < Knot />
+            {/* < Knot /> */}
       </div>
       </>
     );
