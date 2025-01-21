@@ -171,8 +171,8 @@ const Rings: React.FC = () => {
     
             // Rotate the object based on hover state
             const direction = hoverRef.current ? -1 : 1;
-            gem.rotation.y += 0.01; // Rotate the cube around its Y-axis
-            gem.rotation.x += 0.005; // Add a slight rotation on the X-axis
+            gem.rotation.y += direction * 0.01; // Rotate the cube around its Y-axis
+            gem.rotation.x += direction * 0.005; // Add a slight rotation on the X-axis
           }
 
   
