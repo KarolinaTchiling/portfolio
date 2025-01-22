@@ -74,7 +74,7 @@ const handleChange = (panel: string) => {
   </div>
 
   {/* Full-Width Accordions */}
-  <div className="flex flex-col w-full max-w-6xl mx-auto gap-2 mt-14">
+  <div className="flex flex-col w-full max-w-7xl mx-auto gap-2 mt-14">
     <CustomAccordion expanded={expanded === 'panel1'} onChange={() => handleChange('panel1')} typographyComponent={ResearchComp} />
     <CustomAccordion expanded={expanded === 'panel2'} onChange={() => handleChange('panel2')} typographyComponent={ResearchComp}/>
     <CustomAccordion expanded={expanded === 'panel3'} onChange={() => handleChange('panel3')} typographyComponent={ResearchComp}/>

@@ -14,7 +14,7 @@ export default function ResearchTimeline() {
       <TimelineItem className="mt-8">
         <TimelineOppositeContent className="text-gray-400">
 
-          <h4 className="text-xl font-bold text-blue-400 pb-4 pt-11 border-b border-blue-500">Tools & Technologies</h4>
+          <h4 className="text-xl font-bold text-blue-400 pb-4 pt-20 border-b border-blue-500">Tools & Technologies</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white pt-4">
             <ul className="space-y-2">
               <li><strong>Languages:</strong> R, Python, JavaScript, TypeScript</li>
@@ -64,10 +64,10 @@ export default function ResearchTimeline() {
           <p className="text-xl">DARE! Lab at York University</p>
           <p className="text-lg pb-2">May 2024 - Current</p>
           <p className="pb-4">
-            Conducted a large-scale analysis of more than 90,000 papers from the top 100 software engineering journals to investigate gender-based citation bias. My research uncovered a consistent pattern of under-citation of women and over-citation of men, with this disparity steadily increasing since 2009.
+            Over the summer of 2024 I conducted a large-scale analysis of more than 90,000 papers from the top 100 software engineering journals to investigate gender-based citation bias. My research uncovered a consistent pattern of under-citation of women and over-citation of men, with this disparity steadily increasing since 2009.
           </p>
           <p className="pb-14">
-            Building on these findings, I am leading the development of CiteFairly, an innovative online tool aimed at helping researchers analyze citation biases and promote equitable referencing practices. CiteFairly integrates various external APIs to streamline the analysis process and provides actionable insights to encourage more balanced and inclusive citation habits.
+          Building on the identification of biases in computing literature, I am leading the development of CiteFairly, an innovative online tool designed to help researchers analyze and address citation biases. CiteFairly is a web tool built with Node.js, Express.js, Google Firebase, and React, allowing researchers to input their reference lists and receive an analysis of gender biases. The tool generates a citation diversity statement and leverages the Semantic Scholar API to suggest related research that can help balance biases and diversify references. CiteFairly aims to tackle the citation biases identified in academic literature by providing actionable solutions that promote equitable referencing practices and encourage more balanced and inclusive citation habits.
           </p>
         </TimelineContent>
       </TimelineItem>
@@ -76,7 +76,7 @@ export default function ResearchTimeline() {
       <TimelineItem>
         <TimelineOppositeContent className="text-gray-400">
 
-          <h4 className="text-xl font-bold text-green-300 pb-4 pt-11 border-b border-green-500">Tools & Technologies</h4>
+          <h4 className="text-xl font-bold text-green-300 pb-4 pt-20 border-b border-green-500">Tools & Technologies</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white pt-4">
             <ul className="space-y-2">
               <li><strong>Language:</strong> Python</li>
@@ -93,7 +93,7 @@ export default function ResearchTimeline() {
               Presented at the <strong>2024 Lassonde Undergraduate Research Conference</strong>
             </li>
             <li>
-              Co-authored research focused on improving smartphone positioning accuracy using machine learning techniques. Published findings at ION GNSS+ 2024
+              Co-authored conference paper on improving smartphone positioning accuracy using machine learning techniques. Published findings at ION GNSS+ 2024
             </li>
           </ul>
 
@@ -127,12 +127,10 @@ export default function ResearchTimeline() {
           <p className="text-xl">GNSS Lab at York University</p>
           <p className="text-lg pb-2">May 2023 – April 2024</p>
           <p className="pb-4">
-            Conducted research on AI applications in Global Navigation Satellite Systems (GNSS), achieving a 92% accuracy rate
-            in classifying smartphone positioning data using machine learning techniques. Collaborated with a research team to
-            co-author a conference paper and presented findings at the Lassonde Undergraduate Research Conference.
+            I started this research project in the summer of 2023 with goal of investigating the feasibility of using machine learning techniques to enhance the accuracy of smartphone positioning data for driving navigation. Using a predetermined test track, I explored various algorithms and found that the k-nearest neighbors (KNN) algorithm achieved a 92% accuracy rate in classifying the quality of positioning data. 
           </p>
           <p>
-            The research contributed to the development of advanced positioning techniques, leading to improved accuracy in real-world applications. Findings were published in top-tier venues, emphasizing the impact of AI in GNSS technology.
+            Following the initial success of the project, I collaborated with my research team to explore more advanced machine learning techniques, such as Random Forest models, to classify GNSS signals into line-of-sight (LOS) and non-line-of-sight (NLOS) categories. By leveraging GNSS signal features such as carrier-to-noise density ratio (C/No), elevation angle, residuals, innovations, and pseudorange consistency along side ML we aimed to scale the measurement covariance matrix to enhance precise point positioning (PPP) accuracy. Our findings demonstrated that machine-learning-assisted PPP methods could significantly improve positioning accuracy, with root mean square (RMS) error reductions of up to 69% at the 95th percentile across various datasets.
           </p>
         </TimelineContent>
       </TimelineItem>
