@@ -2,7 +2,9 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from 'next/link'
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoDocumentTextOutline } from "react-icons/io5";
+import { IoIosMail } from "react-icons/io";
 import CustomAccordion from "../components/CustomAccordion";
 import Knot from '../components/TorusKnot';
 import Rings from '../components/Rings';
@@ -81,18 +83,22 @@ const handleChange = (panel: string) => {
     <CustomAccordion expanded={expanded === 'panel3'} onChange={() => handleChange('panel3')} typographyComponent={ResearchComp}/>
   </div>
 
-  <footer className="flex gap-6 flex-wrap items-center justify-center text-sm mt-10 animate-fade-in delay-600">
-    <a href="https://nextjs.org/learn" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline hover:underline-offset-4">
-      <Image aria-hidden src="/file.svg" alt="File icon" width={16} height={16} />
+  <footer className="flex gap-6 flex-wrap items-center justify-center text-sm mt-6 animate-fade-in delay-600">
+    <a href="/TchilinguirovaResumeS25.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline hover:underline-offset-4">
+      <IoDocumentTextOutline className="text-xl" />
       CV
     </a>
     <a href="https://github.com/KarolinaTchiling" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline hover:underline-offset-4">
-      <Image aria-hidden src="/window.svg" alt="Window icon" width={16} height={16} />
+      <FaGithub className="text-xl" />
       GitHub
     </a>
     <a href="https://www.linkedin.com/in/karolina-tchilinguirova/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline hover:underline-offset-4">
-      <Image aria-hidden src="/globe.svg" alt="Globe icon" width={16} height={16} />
+      <FaLinkedin className="text-xl"/>
       LinkedIn
+    </a>
+    <a href="mailto:k.tchiling@gmail.com?subject=Inquiry&body=Hi Karolina, I would like to connect with you." target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline hover:underline-offset-4">
+      <IoIosMail className="text-2xl" />
+      Contact Me
     </a>
   </footer>
 </div>
