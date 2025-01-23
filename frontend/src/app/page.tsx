@@ -8,6 +8,7 @@ import Knot from '../components/TorusKnot';
 import Rings from '../components/Rings';
 import Globe from '../components/Globe';
 import ResearchComp from '../components/ResearchComp';
+import DevComp from '../components/DevComp';
 
 export default function Home() {
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -76,7 +77,7 @@ const handleChange = (panel: string) => {
   {/* Full-Width Accordions */}
   <div className="flex flex-col w-full max-w-7xl mx-auto gap-2 mt-14">
     <CustomAccordion expanded={expanded === 'panel1'} onChange={() => handleChange('panel1')} typographyComponent={ResearchComp} />
-    <CustomAccordion expanded={expanded === 'panel2'} onChange={() => handleChange('panel2')} typographyComponent={ResearchComp}/>
+    <CustomAccordion expanded={expanded === 'panel2'} onChange={() => handleChange('panel2')} typographyComponent={DevComp}/>
     <CustomAccordion expanded={expanded === 'panel3'} onChange={() => handleChange('panel3')} typographyComponent={ResearchComp}/>
   </div>
 
