@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { IoDocumentTextOutline } from "react-icons/io5";
+import React from "react";
 
 const MapCard: React.FC = () => {
   const tools = ["ArcGIS", "ArcGIS Pro", "DataBC", "Cartography", "Blood", "Sweat", "Tears"];
