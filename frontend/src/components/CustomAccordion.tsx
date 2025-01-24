@@ -28,7 +28,7 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
     expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '1px' }} />}
     {...props}
   />
-))(({ theme }) => ({
+))(() => ({
   backgroundColor: 'rgba(255, 255, 255, 0)', // Fully transparent background
   flexDirection: 'row-reverse',
   minHeight: '0px', // Almost invisible
@@ -39,8 +39,9 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
   },
 }));
 
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+const AccordionDetails = styled(MuiAccordionDetails)(() => ({
   overflow: 'hidden',
+  // maxHeight: '400px', // Default to collapsed
   transition: 'max-height 0.3s ease',
   margin: '0 auto', 
   backgroundColor: '#0a0a0a', 
