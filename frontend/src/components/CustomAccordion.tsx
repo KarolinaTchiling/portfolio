@@ -41,12 +41,8 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   overflow: 'hidden',
-  // maxHeight: '400px', // Default to collapsed
   transition: 'max-height 0.3s ease',
-  // maxWidth: '1000px',
-  margin: '0 auto',
-  // backgroundColor: 'lightgreen', 
-  // backgroundColor: '#171717', 
+  margin: '0 auto', 
   backgroundColor: '#0a0a0a', 
 }));
 

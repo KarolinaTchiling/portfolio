@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoDocumentTextOutline } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
 import CustomAccordion from "../components/CustomAccordion";
 import Knot from '../components/TorusKnot';
