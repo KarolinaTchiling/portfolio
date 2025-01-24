@@ -1,12 +1,16 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg fill="#ffffff" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" stroke="#ffffff">
+<svg fill="#ffffff" height="250px" width="250px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-66.56 -66.56 645.12 645.12" xml:space="preserve" stroke="#ffffff" stroke-width="32.256" transform="rotate(90)">
 
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
 
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="-66.56" y="-66.56" width="645.12" height="645.12" rx="77.4144" fill="#000000" strokewidth="0"/>
 
-<g id="SVGRepo_iconCarrier"> <g> <g> <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M256,21.333 c129.387,0,234.667,105.28,234.667,234.667c0,40.363-96.384,85.333-234.667,85.333c-28.629,0-55.339-2.005-79.893-5.44 c-3.435-24.555-5.44-51.264-5.44-79.893C170.667,117.717,215.637,21.333,256,21.333z M208.512,26.176 C173.184,67.435,149.333,153.707,149.333,256c0,26.688,1.621,52.309,4.651,76.309C72.683,317.205,21.333,285.419,21.333,256 C21.333,142.869,101.824,48.192,208.512,26.176z M26.176,303.488c27.072,23.168,73.429,41.429,131.136,51.2 c9.792,57.707,28.032,104.064,51.2,131.136C117.163,466.965,45.035,394.837,26.176,303.488z M256,490.667 c-29.419,0-61.205-51.349-76.309-132.651c24,3.029,49.621,4.651,76.309,4.651c102.293,0,188.565-23.851,229.824-59.179 C463.808,410.176,369.131,490.667,256,490.667z"/> </g> </g> </g>
+</g>
+
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#c800ff" stroke-width="52.224000000000004"> <g> <g> <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M256,490.667 c-129.387,0-234.667-105.28-234.667-234.667S126.613,21.333,256,21.333S490.667,126.613,490.667,256S385.387,490.667,256,490.667z "/> </g> </g> </g>
+
+<g id="SVGRepo_iconCarrier"> <g> <g> <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M256,490.667 c-129.387,0-234.667-105.28-234.667-234.667S126.613,21.333,256,21.333S490.667,126.613,490.667,256S385.387,490.667,256,490.667z "/> </g> </g> </g>
 
 </svg>
