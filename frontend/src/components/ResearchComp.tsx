@@ -108,7 +108,7 @@ export default function ResearchTimeline() {
           <h4 className="text-xl font-bold text-green-300 pb-4 pt-8 border-b border-green-500">Research Contributions</h4>
           <ul className="list-disc list-inside text-white space-y-3 pt-4">
             <li>
-              Presented at the <strong>2024 Lassonde Undergraduate Research Conference</strong>
+              Presented at the <strong>2023 Lassonde Undergraduate Research Conference</strong>
             </li>
             <li>
               Co-authored conference paper on improving smartphone positioning accuracy using machine learning techniques. Published findings at ION GNSS+ 2024

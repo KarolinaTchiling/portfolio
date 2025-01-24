@@ -47,7 +47,7 @@ const CaribouCard: React.FC = () => {
               src="/caribou/disturbances.jpg"
               onClick={() => setSelectedImage("/caribou/disturbances.jpg")}
             />
-            <p className="mt-2">"Silviculture disturbances are shown superimposed on the location of the caribou herds."</p>
+            <p className="mt-2">Silviculture disturbances are shown superimposed on the location of the caribou herds.</p>
           </div>
 
           {/* Image 2 */}
