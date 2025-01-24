@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,11 +21,11 @@ export const metadata: Metadata = {
   icons: [
     {
       rel: "icon",
-      url: "/icon.png",
+      url: "/icon.svg",
     },
     {
       rel: "apple-touch-icon",
-      url: "/icon.png",
+      url: "/icon.svg",
     },
   ],
 };
@@ -40,6 +42,7 @@ export default function RootLayout({
       >
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
