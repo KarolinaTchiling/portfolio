@@ -18,14 +18,27 @@ export default function ResearchTimeline() {
 
           <h4 className="text-xl font-bold text-blue-400 pb-4 pt-20 border-b border-blue-500">Tools & Technologies</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white pt-4">
-            <ul className="space-y-2">
-              <li><strong>Languages:</strong> R, Python, JavaScript, TypeScript</li>
-              <li><strong>Front-end:</strong> React, Tailwind CSS</li>
-              <li><strong>Back-end:</strong> Node.js, Express.js</li>
+            <ul className="space-y-2 ">
+              <li className="flex flex-wrap gap-2 mt-2"><strong>Languages:</strong>
+                <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">R</span>
+                <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">Python</span>
+                <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">JavaScript</span></li>
+              <li className="flex flex-wrap gap-2 mt-2"><strong>Front-end:</strong> 
+              <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">React</span>
+              <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">Tailwind CSS</span></li>
+              <li className="flex flex-wrap gap-2 mt-2"><strong>Back-end:</strong> 
+              <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">Node.js</span>
+              <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">Express.js</span></li>
             </ul>
             <ul className="space-y-2">
-              <li><strong>Databases:</strong> MongoDB, Google Firebase</li>
-              <li><strong>APIs:</strong> CrossRef, Gender-API, OpenAlex, Semantic Scholar</li>
+              <li className="flex flex-wrap gap-2 mt-2"><strong>Databases:</strong> 
+              <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">MongoDB</span>
+              <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">Google Firebase</span></li>
+              <li className="flex flex-wrap gap-2 mt-2"><strong>APIs:</strong>
+              <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">CrossRef</span>
+              <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">Gender-API</span>
+              <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">OpenAlex</span>
+              <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">Semantic Scholar</span> </li>
             </ul>
           </div>
 
@@ -84,11 +97,11 @@ export default function ResearchTimeline() {
           <h4 className="text-xl font-bold text-green-300 pb-4 pt-20 border-b border-green-500">Tools & Technologies</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white pt-4">
             <ul className="space-y-2">
-              <li><strong>Language:</strong> Python</li>
-              <li><strong>Machine Learning:</strong> Scikit-learn</li>
+              <li><strong>Language:</strong> <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">Python</span></li>
+              <li><strong>Machine Learning:</strong> <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">Scikit-learn</span></li>
             </ul>
             <ul className="space-y-2">
-              <li><strong>Data Visualization:</strong> Python (Matplotlib, Pandas)</li>
+              <li><strong>Data Visualization:</strong> <span className="px-3 py-1 text-sm font-medium bg-gray-800 text-white rounded-full">Matplotlib</span></li>
             </ul>
           </div>
 
