@@ -36,9 +36,8 @@ This map holds deep sentimental value for me, so much so that I have a 3-by-3-fo
 
         <div className="w-full flex flex-col items-center justify-center text-center mt-4">
           <img
-            className="h-[35rem] object-fill rounded-lg"
-            src="/ForestServiceRoadsPG.jpg"
-            alt="Caribou Disturbances"
+            className="h-[30rem] object-fill rounded-lg"
+            src="/Final600.jpg"
           />
           <a
             href="/ForestServiceRoadsPG.jpg"

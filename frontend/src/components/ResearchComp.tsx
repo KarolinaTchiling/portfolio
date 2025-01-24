@@ -6,6 +6,8 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 export default function ResearchTimeline() {
   return (
@@ -36,18 +38,21 @@ export default function ResearchTimeline() {
 
           <ul className="flex items-center justify-start space-x-8 text-lg text-white pt-4">
             <li>
-              <a href="https://arxiv.org/abs/2410.02801" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-500 transition">
-                <strong>Preprint</strong>
+              <a href="https://arxiv.org/abs/2410.02801" target="_blank" rel="noopener noreferrer" className="flex items-center text-teal-400 font-semibold hover:underline">
+                <FaExternalLinkAlt className="mr-2" />
+                Preprint
               </a>
             </li>
             <li>
-              <a href="https://github.com/KarolinaTchiling/gender-citations-swe-public" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-500 transition">
-                <strong>GitHub</strong>
+              <a href="https://github.com/KarolinaTchiling/gender-citations-swe-public" target="_blank" rel="noopener noreferrer" className="flex items-center text-purple-400 font-semibold hover:underline">
+                <FaGithub className="mr-2"/>
+                GitHub
               </a>
             </li>
             <li>
-              <a href="/figs/BiasPoster.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-500 transition">
-                <strong>Research Poster</strong>
+              <a href="/figs/BiasPoster.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center text-pink-400 font-semibold hover:underline">
+                <IoDocumentTextOutline className="mr-2" />
+                Research Poster
               </a>
             </li>
           </ul>
@@ -99,18 +104,21 @@ export default function ResearchTimeline() {
 
           <ul className="flex items-center justify-start space-x-8 text-lg text-white pt-4">
             <li>
-              <a href="https://doi.org/10.33012/2024.19761" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:text-green-500 transition">
-                <strong>Publication</strong>
+              <a href="https://doi.org/10.33012/2024.19761" target="_blank" rel="noopener noreferrer" className="flex items-center text-teal-400 font-semibold hover:underline">
+                <FaExternalLinkAlt className="mr-2" />
+                Publication
               </a>
             </li>
             <li>
-              <a href="https://github.com/KarolinaTchiling/gnss-ml-2.0" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:text-green-500 transition">
-                <strong>GitHub</strong>
+              <a href="https://github.com/KarolinaTchiling/gnss-ml-2.0" target="_blank" rel="noopener noreferrer" className="flex items-center text-purple-400 font-semibold hover:underline">
+              <FaGithub className="mr-2"/>
+                GitHub
               </a>
             </li>
             <li>
-              <a href="/figs/GnssPoster.pdf" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:text-green-500 transition">
-                <strong>Research Poster</strong>
+              <a href="/figs/GnssPoster.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center text-pink-400 font-semibold hover:underline">
+              <IoDocumentTextOutline className="mr-2" />
+                Research Poster
               </a>
             </li>
           </ul>

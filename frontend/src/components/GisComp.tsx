@@ -31,6 +31,7 @@ const MyProjects = () => {
           ['--swiper-pagination-color' as any]: "#ff00fb",
           ['--swiper-pagination-bullet-inactive-color' as any]: "#a3a3a3",
           ['--swiper-pagination-bullet-inactive-opacity' as any]: "0.5",
+          ['--swiper-navigation-color' as any]: "#ff00fb",  // Change arrow color
         }}
       >
         {projects.map((project, index) => (
