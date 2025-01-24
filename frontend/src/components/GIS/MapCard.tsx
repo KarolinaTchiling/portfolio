@@ -40,7 +40,7 @@ This map holds deep sentimental value for me, so much so that I have a 3-by-3-fo
             src="/Final600.jpg"
           />
           <a
-            href="/ForestServiceRoadsPG.jpg"
+            href="/Map.jpg"
             target="_blank"
             rel="noopener noreferrer"
             className="my-4 inline-block px-4 py-2 bg-black-500 border border-gray-700 text-white font-semibold rounded-lg hover:bg-pink-700 transition"
