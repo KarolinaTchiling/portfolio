@@ -114,14 +114,14 @@ const Rings: React.FC = () => {
       controls.update();
 
       // Handle window resize
-      window.addEventListener('resize', onWindowResize);
+      // window.addEventListener('resize', onWindowResize);
     };
 
-    const onWindowResize = () => {
-      renderer.setSize(window.innerWidth, window.innerHeight);
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-    };
+    // const onWindowResize = () => {
+    //   renderer.setSize(window.innerWidth, window.innerHeight);
+    //   camera.aspect = window.innerWidth / window.innerHeight;
+    //   camera.updateProjectionMatrix();
+    // };
 
     const animation = (time: number) => {
         if (torus1) {
@@ -188,7 +188,7 @@ const Rings: React.FC = () => {
       if (mountRef.current) {
         mountRef.current.innerHTML = '';
       }
-      window.removeEventListener('resize', onWindowResize);
+      // window.removeEventListener('resize', onWindowResize);
     };
   }, []);
 

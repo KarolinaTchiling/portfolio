@@ -11,6 +11,7 @@ import Rings from '../components/Rings';
 import Globe from '../components/Globe';
 import ResearchComp from '../components/ResearchComp';
 import DevComp from '../components/DevComp';
+import GisComp from '../components/GisComp';
 
 export default function Home() {
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -80,7 +81,7 @@ const handleChange = (panel: string) => {
   <div className="flex flex-col w-full max-w-7xl mx-auto gap-2 mt-14">
     <CustomAccordion expanded={expanded === 'panel1'} onChange={() => handleChange('panel1')} typographyComponent={ResearchComp} />
     <CustomAccordion expanded={expanded === 'panel2'} onChange={() => handleChange('panel2')} typographyComponent={DevComp}/>
-    <CustomAccordion expanded={expanded === 'panel3'} onChange={() => handleChange('panel3')} typographyComponent={ResearchComp}/>
+    <CustomAccordion expanded={expanded === 'panel3'} onChange={() => handleChange('panel3')} typographyComponent={GisComp}/>
   </div>
 
   <footer className="flex gap-6 flex-wrap items-center justify-center text-sm mt-6 animate-fade-in delay-600">
