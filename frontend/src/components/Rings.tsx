@@ -7,7 +7,7 @@ import { RectAreaLightUniformsLib } from 'three/examples/jsm/lights/RectAreaLigh
 
 const Rings: React.FC = () => {
   const mountRef = useRef<HTMLDivElement>(null);
-  const [hovered, setHovered] = useState(false); // React state for hover
+  const [ ,setHovered] = useState(false); // React state for hover
   const hoverRef = useRef(false); // Mutable ref for hover to avoid state lag
 
   useEffect(() => {
@@ -123,7 +123,7 @@ const Rings: React.FC = () => {
     //   camera.updateProjectionMatrix();
     // };
 
-    const animation = (time: number) => {
+    const animation = () => {
         if (torus1) {
           // Check for hover using raycaster on the hoverCube
           raycaster.setFromCamera(mouse, camera);
