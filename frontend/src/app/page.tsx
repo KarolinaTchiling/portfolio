@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import { IoDocumentTextOutline } from "react-icons/io5";
 import CustomAccordion from "../components/CustomAccordion";
 import Knot from '../components/TorusKnot';
 import Rings from '../components/Rings';
@@ -87,6 +88,7 @@ const handleChange = (panel: string) => {
 
     <footer className="flex gap-6 flex-wrap items-center justify-center text-sm mt-6 animate-fade-in delay-600">
       <a href="/TchilinguirovaResumeS25.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline hover:underline-offset-4">
+        <IoDocumentTextOutline className="text-xl" />
         CV
       </a>
       <a href="https://github.com/KarolinaTchiling" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline hover:underline-offset-4">
