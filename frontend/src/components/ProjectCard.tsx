@@ -34,8 +34,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
       {/* Content Section */}
       <div className="p-6 flex flex-col justify-between w-full md:w-full">
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-white">{title}</h2>
-        <p className="mt-2 text-gray-600 dark:text-gray-300">{description}</p>
+        <h2 className="text-2xl font-bold text-white">{title}</h2>
+        <p className="mt-2 text-gray-300">{description}</p>
 
         <div className="flex items-center gap-6 mt-4">
           <a
@@ -59,7 +59,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
 
         <div className="mt-4">
-          <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-200">Tech Stack</h3>
+          <h3 className="text-lg font-semibold text-gray-200">Tech Stack</h3>
           <div className="flex flex-wrap gap-2 mt-2">
             {tools.map((tool, index) => (
               <span

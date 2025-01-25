@@ -7,9 +7,9 @@ const BisonCard: React.FC = () => {
   const tools = ["ArcGIS", "ArcMap", "Multi-Criteria Decision Analysis", "GeoYukon"];
 
   return (
-    <div className="max-w-5xl bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 dark:bg-gray-900 dark:border-gray-700 m-20 mt-0 mb-12">
+    <div className="max-w-5xl shadow-lg rounded-lg overflow-hidden border bg-gray-900 border-gray-700 m-20 mt-0 mb-12">
       <div className="p-6 pb-0">
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-white text-center">
+        <h2 className="text-2xl font-bold text-white text-center">
           Habitat Suitability Analysis of the Aishihik Wood Bison Herd in Yukon, Canada
         </h2>
 
@@ -35,7 +35,7 @@ const BisonCard: React.FC = () => {
 
         </div>
 
-        <p className="mt-2 text-gray-600 dark:text-gray-300">
+        <p className="mt-2 text-gray-300">
           A weighted suitability analysis was conducted to identify the favorable and unfavorable areas throughout the Aishihik wood bison herd's range. The weighted model considered two major influences; environmental/physical and human activities.
         </p>
 
@@ -89,7 +89,7 @@ const BisonCard: React.FC = () => {
       {/* Modal Dialog for Enlarged Image */}
       <Dialog open={!!selectedImage} onClose={() => setSelectedImage(null)} className="relative z-50">
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
-          <Dialog.Panel className="max-w-4xl mx-auto p-4 bg-white dark:bg-gray-900 rounded-lg shadow-lg relative">
+          <Dialog.Panel className="max-w-4xl mx-auto p-4 bg-gray-900 rounded-lg shadow-lg relative">
             <button
               onClick={() => setSelectedImage(null)}
               className="absolute top-4 right-4 text-gray-300 hover:text-white text-2xl"

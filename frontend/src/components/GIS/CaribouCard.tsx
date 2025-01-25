@@ -7,9 +7,9 @@ const CaribouCard: React.FC = () => {
   const tools = ["ArcGIS", "ArcMap", "Regression Analysis", "OLS", "DataBC"];
 
   return (
-    <div className="max-w-xlg bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 dark:bg-gray-900 dark:border-gray-700 m-20 mt-0 mb-12">
+    <div className="max-w-xlg shadow-lg rounded-lg overflow-hidden border bg-gray-900 border-gray-700 m-20 mt-0 mb-12">
       <div className="p-6 pb-0">
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-white text-center">
+        <h2 className="text-2xl font-bold text-white text-center">
         Regression Analysis of Logging Activities on Caribou Populations in Omineca Region, BC
         </h2>
 
@@ -35,7 +35,7 @@ const CaribouCard: React.FC = () => {
 
         </div>
 
-        <p className="mt-2 text-gray-600 dark:text-gray-300">
+        <p className="mt-2 text-gray-300">
         An Ordinary Least Squares regression analysis was conducted on the relationship between logging activities and caribou populations. The OLS model indicated a negative relationship between logging activities and caribou herd population.
         </p>
 
@@ -65,7 +65,7 @@ const CaribouCard: React.FC = () => {
       {/* Modal Dialog for Enlarged Image */}
       <Dialog open={!!selectedImage} onClose={() => setSelectedImage(null)} className="relative z-50">
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
-            <Dialog.Panel className="max-w-4xl mx-auto p-4 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+            <Dialog.Panel className="max-w-4xl mx-auto p-4 bg-gray-900 rounded-lg shadow-lg">
             <button
                 onClick={() => setSelectedImage(null)}
                 className="absolute top-4 right-4 text-gray-300 hover:text-white text-xl"

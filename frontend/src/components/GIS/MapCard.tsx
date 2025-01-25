@@ -4,9 +4,9 @@ const MapCard: React.FC = () => {
   const tools = ["ArcGIS", "ArcGIS Pro", "DataBC", "Cartography", "Blood", "Sweat", "Tears"];
 
   return (
-    <div className="max-w-xlg bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 dark:bg-gray-900 dark:border-gray-700 m-20 mt-0 mb-12">
+    <div className="max-w-xlg shadow-lg rounded-lg overflow-hidden border bg-gray-900 border-gray-700 m-20 mt-0 mb-12">
       <div className="p-6 pb-0">
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-white text-center">
+        <h2 className="text-2xl font-bold text-white text-center">
         More Than Just a Map: A Tribute to My Time in the North
         </h2>
 
@@ -27,7 +27,7 @@ const MapCard: React.FC = () => {
 
         </div>
 
-        <p className="mt-2 text-gray-600 dark:text-gray-300">
+        <p className="mt-2 text-gray-300">
         This map is a personal project where I explored the artistic side of GIS, inspired by my summer's tree planting in Northern BC. I've spent countless hours driving up and down Highway 97 to and from Prince George on my days off and navigating the region's busy logging roads in the company F-550 trucks, calling out, "Pick-up 50 down on the Crocker."
 I've marked the two planting camps where I lived out of a tent—enduring hot, cold, and rainy nights in Bear Country. I've planted over 100,000 trees in this area, contributing to my tree planting career total of over half a million.
 This map holds deep sentimental value for me, so much so that I have a 3-by-3-foot framed copy displayed in my living room, a constant reminder of my connection to this land.</p>
