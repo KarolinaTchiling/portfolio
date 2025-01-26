@@ -47,8 +47,7 @@ const handleChange = (panel: string) => {
         {/* Column 2 */}
         <div className="flex flex-col gap-6 text-center sm:text-left sm:justify-center">
           <div className="text-2xl font-medium leading-snug animate-fade-in delay-200">
-            Hi, I'm <span className="font-bold text-[var(--accent-color)]">Karolina</span>, an ex-geology graduate
-            turned researcher and aspiring software engineer; passionate about GIS and software development.
+            Hi, I'm <span className="font-bold text-[var(--accent-color)]">Karolina</span>, an ex-geology graduate turned computer science student and researcher; passionate about GIS, data-driven insights, and software solutions.
           </div>
         </div>
 
