@@ -172,13 +172,12 @@ return (
                         </div>
                       </div>
 
-                      <div className="my-6">
-                        <video
-                          controls
-                          className="w-full rounded-xl shadow-lg"
-                        >
-                          <source src="/Why_me.mp4" type="video/mp4" />
-                        </video>
+                      <div className="w-full aspect-video my-6">
+                        <iframe
+                          src="https://drive.google.com/file/d/1bC7u19YoPts-HNPvWI20h7S1SA8T29Sd/preview"
+                          className="w-full h-full rounded-xl"
+                          allow="autoplay"
+                        />
                       </div>
                 </div>
 
