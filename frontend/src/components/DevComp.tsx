@@ -4,6 +4,14 @@ import PortfolioCard from "./PortfolioCard"
 const MyProjects = () => {
   const projects = [
     {
+      title: "CiteFairly",
+      description: "CiteFairly is a web tool that analyzes reference lists for gender bias, generates citation diversity statements, and recommends related research via the Semantic Scholar API to promote more equitable and inclusive citation practices.",
+      imageUrl: "/figs/citefairly.png",
+      githubLink: "https://github.com/KarolinaTchiling/citefair-webapp",
+      demoLink: "https://citefairly.vercel.app",
+      tools: ["JavaScript", "Node.js", "React", "Tailwind CSS", "Firebase"],
+    },
+    {
       title: "DJ WAMP's Merch Store",
       description: "An online merch store for DJ WAMP with features like product filtering, cart management, checkout, account management, and an admin panel.",
       imageUrl: "/figs/store.png",

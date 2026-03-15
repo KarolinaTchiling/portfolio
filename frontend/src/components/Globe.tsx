@@ -150,6 +150,7 @@ const Globe: React.FC = () => {
     };
   }, []);
 
+  // console.log("Globe rendered");
   return <div ref={mountRef} style={{ width: '300px', height: '300px', margin: 'auto' }} />;
 };
 
