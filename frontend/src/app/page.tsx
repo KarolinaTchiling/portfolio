@@ -132,27 +132,27 @@ return (
                   <div>
                           <div className="flex flex-col">
                                   <div className="text-xl font-bold">
-                                    Co-op and Internship Experience
+                                    Co-op and Work Experience
                                   </div>
 
                                   <div className="mt-4 grid grid-cols-[auto_1fr] gap-3 gap-x-4 text-base font-medium text-white">
 
                                     <div>Hydro One Networks </div>
                                     <div>
-                                      <div> Data Analyst & Data Engineer  </div>
-                                      <div className="font-thin italic text-sm">(16-month Co-op)</div>
+                                      <div> Data Analyst </div>
+                                      <div className="font-thin italic text-sm">16-month Co-op</div>
                                     </div>
 
                                     <div>DARE! Lab @ YorkU </div>
                                     <div>
-                                      <div> Data Science & Software Developer</div>
-                                      <div className="font-thin italic text-sm">(4-month Co-op; 8-month part-time Research Assistant)</div>
+                                      <div> Data Scientist & Full-Stack Web Developer</div>
+                                      <div className="font-thin italic text-sm">4-month Co-op; 8-month part-time Research Assistant</div>
                                     </div>
 
                                     <div>GNSS Lab @ YorkU </div>
                                     <div>
                                       <div> Geospatial Machine Learning Developer</div>
-                                      <div className="font-thin italic text-sm">(4-month Internship; 8-month part-time Research Assistant)</div>
+                                      <div className="font-thin italic text-sm">4-month Internship; 8-month part-time Research Assistant</div>
                                     </div>
 
                                   </div>
