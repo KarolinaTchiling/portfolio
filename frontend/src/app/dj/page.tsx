@@ -546,7 +546,7 @@ export default function DJPage() {
           <audio preload="metadata"></audio>
           <div className="audio-header">
             <div className="audio-player-description">
-              <h3 className="title">1st SET EVER (I'm just turned 28) :P - May 19th 2025 </h3>
+              <h3 className="title">1st SET EVER (I just turned 28) :P - May 19th 2025 </h3>
               <h4 className="details">MIRRO</h4>
             </div>
             <div
