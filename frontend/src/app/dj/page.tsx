@@ -502,7 +502,7 @@ export default function DJPage() {
           <audio preload="metadata"></audio>
           <div className="audio-header">
             <div className="audio-player-description">
-              <h3 className="title">PiNk SkIeS and PiNgO GrIgO - June 8th 2025 </h3>
+              <h3 className="title">PiNk SkIeS and PiNoT GrIgO - June 8th 2025 </h3>
               <h4 className="details">MIRRO</h4>
             </div>
             <div
