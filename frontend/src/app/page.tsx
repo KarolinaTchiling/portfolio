@@ -4,13 +4,14 @@ import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { IoDocumentTextOutline } from "react-icons/io5";
-import CustomAccordion from "../components/CustomAccordion";
-import Knot from '../components/TorusKnot';
-import Rings from '../components/Rings';
-import Globe from '../components/Globe';
-import ResearchComp from '../components/ResearchComp';
-import DevComp from '../components/DevComp';
-import GisComp from '../components/GisComp';
+import { GiSoundWaves } from "react-icons/gi";
+import CustomAccordion from "./components/CustomAccordion";
+import Knot from './components/TorusKnot';
+import Rings from './components/Rings';
+import Globe from './components/Globe';
+import ResearchComp from './components/ResearchComp';
+import DevComp from './components/DevComp';
+import GisComp from './components/GisComp';
 
 export default function Home() {
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -37,7 +38,7 @@ export default function Home() {
   };
   
 return (
-<div className="scrollable min-h-screen flex flex-col justify-between items-center p-8 pb-10 sm:p-14 sm:pb-10 sm:pr-10 font-[family-name:var(--font-geist-sans)]">
+<div className="scrollable min-h-screen flex flex-col justify-between items-center p-8 pb-9 sm:p-14 sm:pb-9 sm:pr-10 font-[family-name:var(--font-geist-sans)]">
   
   <main className="flex-grow">
 
@@ -188,7 +189,7 @@ return (
   
     </main>
 
-    <footer className="flex gap-6 flex-wrap items-center justify-center text-sm mt-6 animate-fade-in delay-600">
+    <footer className="flex gap-6 flex-wrap items-center justify-center text-sm mt-5 animate-fade-in delay-600">
       <a href="/KarolinaTchilinguirovaCV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline hover:underline-offset-4">
         <IoDocumentTextOutline className="text-xl" />
         CV
@@ -204,6 +205,10 @@ return (
       <a href="mailto:k.tchiling@gmail.com?subject=Inquiry&body=Hi Karolina, I would like to connect with you." target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline hover:underline-offset-4">
         <IoIosMail className="text-2xl" />
         Contact Me
+      </a>
+      <a href="https://dj.karolina.codes/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2  hover:text-red-500">
+        <GiSoundWaves className="text-3xl"/>
+        DJ MIRRO
       </a>
     </footer>
 </div>
